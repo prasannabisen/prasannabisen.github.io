@@ -2,6 +2,7 @@ import Avatar from '@material-ui/core/Avatar'
 import {makeStyles} from '@material-ui/core/styles'
 import Heading from './Heading';
 import photo from './photo3.png'
+import './Heading.css'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -28,9 +29,12 @@ export default function Home(){
     const classes = useStyles();
     return(<div>
         <Heading className={classes.name}/>
-        <div className={classes.root}>
-            <Avatar src={photo} className={classes.large}/>
-            <p className={classes.pra}>Hii, I'm prasanna.<br/>Currently in final year pusing B.tech in Information Technology.<br/>Say hi in Linkdin<a href="www.google.com"> @prasanna</a></p>
+        <div className="int">
+          <div className={classes.root}>
+              <Avatar src={photo} className={classes.large}/>
+              <p className={classes.pra}>Hii, I'm prasanna.<br/>Currently in final year pusing B.tech in Information Technology.
+              <br/>Say hi in Linkdin<a href="www.google.com"> @prasannabisen</a></p>
+          </div>
         </div>
     </div>)
 }

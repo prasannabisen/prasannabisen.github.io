@@ -1,10 +1,10 @@
 import './App.css';
-import Home from './Component/Home';
+import Navbarss from './Component/Navbarss'
 
 function App() {
   return (
     <div>
-      <Home/>
+      <Navbarss/>
     </div>
   );
 }
